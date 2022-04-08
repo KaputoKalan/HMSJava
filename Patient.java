@@ -2,6 +2,7 @@ public class Patient extends User{
     
     private long patient_id;
     private boolean insured;
+    private HealthInsurancePlan insurancePlan;
 
     public Patient(){
 
@@ -17,6 +18,12 @@ public class Patient extends User{
     }
     public boolean getInsured(){
         return insured;
+    }
+    public void  setHealthInsurancePlan(HealthInsurancePlan insurancePlan){
+        this.insurancePlan = insurancePlan;
+    }
+    public HealthInsurancePlan getHealthInsurancePlan(){
+        return insurancePlan;
     }
 }
 
